@@ -1,4 +1,7 @@
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 BASE_URL = 'https://test.api.amadeus.com/'
 FIND_FLIGHTS = 'v2/shopping/flight-offers'
@@ -7,8 +10,8 @@ FLIGHT_PRICE = 'v1/shopping/flight-offers/pricing'
 
 def get_token():
     auth_url = "https://test.api.amadeus.com/v1/security/oauth2/token"
-    api_key = 'CYQm96Riv5iBlS8EHjx3oawUYRpbqi8H'
-    api_secret = 'ewU6JJjhgbX4O7iX'
+    api_key = os.getenv('API_KEY_AMADEUS')
+    api_secret = os.getenv('API_SECRET_AMADEUS')
     header = {
         'content-type': 'application/x-www-form-urlencoded'
     }
