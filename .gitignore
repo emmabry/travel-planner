@@ -1,3 +1,17 @@
-# created by virtualenv automatically
 .env
 .venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
