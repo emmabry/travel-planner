@@ -67,7 +67,6 @@ def format_offer(price_details):
     pass
 
 
-
 if __name__ == '__main__':
     auth_token = get_token()
     first_offer = check_flights()
